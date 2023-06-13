@@ -1,0 +1,18 @@
+people = {
+        "first" : ["anu","sneha","raunak"],
+        "last" : ["rawat","singh","sambharwal"],
+         "email" : ["anurawat@gmail.com","snehasingh@gmail.com","raunaksambharwal@gmail.com"]
+}
+
+df  = pd.DataFrame(people)
+df
+
+df.set_index('email')  for showing the   emails only and this chnage is temprory if we write    df.set_index('email',inplace = true) it will be permenanet
+df
+
+df.loc[0]
+df.reset_index(inplace = True)   #for reset the values
+df
+df.head(1)
+df.tail(2)
+df.loc["raunaksambharwal@gmail.com","last"] will show the last value of the -- df.loc["raunaksambharwal@gmail.com","last"]-- i.e sambharwal
